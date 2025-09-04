@@ -1,0 +1,9 @@
+# For GitHub (requirements.txt)
+pandas
+numpy
+matplotlib
+scipy
+statsmodels
+prophet
+pulp
+jupyter

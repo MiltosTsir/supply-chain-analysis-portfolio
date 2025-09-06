@@ -1,6 +1,4 @@
-# Supply Chain Analysis Portfolio  <!-- For GitHub -->
-
-# Supply Chain Analysis Portfolio  <!-- For GitHub -->
+# Supply Chain Analysis Portfolio
 
 Welcome to my **Supply Chain Analysis Portfolio** 🚀.  
 This repository showcases 7 projects covering forecasting, inventory optimization, supplier performance, logistics KPIs, network design, and sustainability.  

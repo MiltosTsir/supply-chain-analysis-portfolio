@@ -33,6 +33,19 @@ More details can be found in [`README_data.md`](data/raw/README_data.md).
 
 Documentation: [`README_notebook.md`](notebooks/README_notebook.md)
 
+## 📒 Notebooks
+
+Open notebooks directly in Google Colab:
+
+- **Exploratory Data Analysis (EDA)**  
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MiltosTsir/supply-chain-analysis-portfolio/blob/main/portfolio/01-demand-forecasting/notebooks/01_eda_forecasting.ipynb)
+
+- **ARIMA Model**  
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MiltosTsir/supply-chain-analysis-portfolio/blob/main/portfolio/01-demand-forecasting/notebooks/02_model_arima.ipynb)
+
+- **Prophet Model**  
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MiltosTsir/supply-chain-analysis-portfolio/blob/main/portfolio/01-demand-forecasting/notebooks/03_model_prophet.ipynb)
+
 ---
 
 ## Folder Structure

@@ -10,7 +10,8 @@ Each project includes datasets, analysis (Python/Power BI/Tableau), and business
 
 | #  | Project                          | Description                                                      | Tools/Methods                       | Link |
 |----|----------------------------------|------------------------------------------------------------------|-------------------------------------|------|
-| 01 | **Demand Forecasting**           | Time series forecasting (ARIMA, Prophet) to predict SKU demand   | Python, Statsmodels, Prophet         | [View Project](portfolio/01-demand-forecasting) |
+| 01 | **Demand Forecasting** | Time series forecasting (ARIMA, Prophet) to predict SKU demand | Python, Statsmodels, Prophet | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MiltosTsir/supply-chain-analysis-portfolio/blob/main/portfolio/01-demand-forecasting/notebooks/01_eda_forecasting.ipynb) |
+
 | 02 | **Inventory Optimization**       | EOQ, Safety Stock, and Reorder Point calculations                | Python, Excel, Power BI              | View Project |
 | 03 | **ABC/XYZ Analysis**             | Product classification by sales value & demand variability       | Python, Pandas, Tableau              | View Project |
 | 04 | **Logistics Performance Dashboard** | Interactive dashboard for OTIF, lead time, transport cost KPIs | Power BI / Tableau                   | View Project |

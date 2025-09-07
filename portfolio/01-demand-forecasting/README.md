@@ -5,6 +5,9 @@ This project focuses on **demand forecasting** using time series analysis.
 The goal is to explore historical sales data, identify trends and seasonality, and build baseline forecasting models.  
 Later iterations will include advanced forecasting models such as ARIMA, Prophet, and ML approaches.
 
+> **Update:** Notebooks now use the **processed data pipeline**.  
+> Source: `data/processed/cleaned_sales.csv` (created in Colab from `data/raw/mock_kaggle.csv` with features such as lags and moving averages).
+
 ---
 
 ## Dataset

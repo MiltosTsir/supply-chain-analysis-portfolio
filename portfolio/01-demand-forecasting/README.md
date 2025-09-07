@@ -1,52 +1,61 @@
-# Demand Forecasting (Flagship)  
+# Project 01 – Demand Forecasting
 
 ## Overview
-Forecast monthly demand for 50–100 SKUs to improve supply planning and reduce stockouts. This project demonstrates time series forecasting, model comparison, and business interpretation.
+This project focuses on **demand forecasting** using time series analysis.  
+The goal is to explore historical sales data, identify trends and seasonality, and build baseline forecasting models.  
+Later iterations will include advanced forecasting models such as ARIMA, Prophet, and ML approaches.
+
+---
 
 ## Dataset
-- Source: Walmart Recruiting – Store Sales Forecasting (Kaggle)  
-- Link: https://www.kaggle.com/competitions/walmart-recruiting-store-sales-forecasting  
-- Notes: Historical sales at store-department level; exogenous variables available.
+- **File:** [`mock_kaggle.csv`](data/raw/mock_kaggle.csv)  
+- **Size:** 937 rows × 4 columns  
+- **Columns:**
+  - `data` → Date of sales record  
+  - `venda` → Units sold (sales)  
+  - `estoque` → Stock levels  
+  - `preco` → Product price  
 
-## Objectives
-- Build baseline and advanced models (naïve, moving average, ARIMA, Prophet).
-- Compare accuracy via MAPE/RMSE and select the champion model.
-- Translate accuracy into inventory and service-level implications.
+More details can be found in [`README_data.md`](data/raw/README_data.md).
 
-## Methodology
-1. Ingest & clean sales, calendar, and promo features.
-2. EDA: trend/seasonality, holiday effects, SKU clustering.
-3. Modeling: ARIMA grid search; Prophet with regressors.
-4. Validation: expanding window CV; error distribution by SKU.
-5. Results: SKU-level forecasts and confidence intervals; uplift on service level.
+---
 
-## Key Metrics
-- **MAPE** = mean absolute percentage error.  
-- **RMSE** = root mean squared error.  
+## Notebooks
+- [`01_eda_forecasting.ipynb`](notebooks/01_eda_forecasting.ipynb)  
+  - Loads the dataset  
+  - Exploratory Data Analysis (EDA)  
+  - Time series decomposition (trend, seasonality, residuals)  
+  - Baseline forecasts (Naive, 7-day Moving Average)  
+  - Evaluation with MAPE  
 
-## Files & Structure
-data/
-raw/ # original files (not versioned)
-processed/ # cleaned & ready-to-model
-notebooks/ # Jupyter notebooks (EDA, modeling, validation)
-src/ # reusable Python scripts
-reports/ # PDF/Markdown reports
-Dashboards/ # Power BI / Tableau files
-figures/ # exported charts
+Documentation: [`README_notebook.md`](notebooks/README_notebook.md)
+
+---
+
+## Folder Structure
+01-demand-forecasting/
+├── data/
+│ ├── raw/
+│ │ ├── mock_kaggle.csv
+│ │ └── README_data.md
+│ └── processed/ # (to be added later)
+├── notebooks/
+│ ├── 01_eda_forecasting.ipynb
+│ └── README_notebook.md
+├── src/ # (functions and scripts – to be developed)
+├── reports/ # (markdown or pdf reports)
+├── Dashboards/ # (Power BI / Tableau dashboards)
+├── figures/ # (charts and screenshots)
+└── README.md # (this file)
 
 
-## How to Reproduce
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-jupyter notebook
+---
 
-Open notebooks/01_eda.ipynb then 02_modeling_arima.ipynb and 03_modeling_prophet.ipynb.
-
-Results (Highlights)
-Prophet with holiday regressors reduced MAPE by ~X% vs baseline.
-Expected reduction of stockouts at ABC-A items by ~Y% (scenario estimate).
-Next Steps
-Add weather/macroeconomic regressors.
-Serve forecasts to Inventory Optimization project.
+## Next Steps
+1. Implement advanced forecasting models:
+   - ARIMA
+   - Facebook Prophet
+   - ML models (XGBoost, LSTM)
+2. Compare model performance against baselines.
+3. Visualize results in dashboards (Power BI / Tableau).
+4. Document insights in reports.
